@@ -1,6 +1,0 @@
-
-```
-E-Commerce
-└─ Stock.py
-
-```
