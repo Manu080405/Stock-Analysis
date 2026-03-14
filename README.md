@@ -223,16 +223,3 @@ This project demonstrates:
 - Flask application architecture
 
 ---
-
-# 📜 License
-
-MIT License
-
----
-
-# 👨‍💻 Author
-
-**Manu**
-
-GitHub  
-https://github.com/Manu080405
