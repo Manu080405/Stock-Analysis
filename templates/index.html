@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stock Analyzer Dashboard</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">📈 Stock Analyzer</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Stocks</a>
+<a href="#">Analysis</a>
+<a href="#">About</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Stock Market Dashboard</h1>
+<p>Analyze stock performance with real-time data</p>
+
+</section>
+
+
+<section class="dashboard">
+
+<div class="card">
+
+<h2>Stock Search</h2>
+
+<input id="tickers" placeholder="Enter tickers (TSLA, AMZN, AMD)">
+
+<input id="start" type="date">
+
+<input id="end" type="date">
+
+<button onclick="getStock()">Analyze Stocks</button>
+
+</div>
+
+
+<div class="card stats">
+
+<h2>Market Info</h2>
+
+<div class="stat-box">
+<span class="stat-title">Stocks Tracked</span>
+<span id="stocksCount">0</span>
+</div>
+
+<div class="stat-box">
+<span class="stat-title">Data Points</span>
+<span id="dataCount">0</span>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="results">
+
+<h2>Stock Data</h2>
+
+<table id="stockTable">
+
+<thead>
+
+<tr>
+<th>Date</th>
+<th>Open</th>
+<th>High</th>
+<th>Low</th>
+<th>Close</th>
+<th>Volume</th>
+</tr>
+
+</thead>
+
+<tbody></tbody>
+
+</table>
+
+</section>
+
+
+<div class="loading" id="loading">
+
+<div class="spinner"></div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Stock Analyzer Dashboard</p>
+
+</footer>
+
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
